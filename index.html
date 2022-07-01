@@ -91,12 +91,12 @@
               <h3 class="features__subheading">
                 Bookmark in one click
               </h3>
-              <p class="features__subdesc">
+              <p class="slide__subdesc">
                 Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control
                 over how you manage your favourite sites.
               </p>
 
-              <a class="features__btn" href="#">More Info</a>
+              <a class="slide__btn" href="#">More Info</a>
             </div>
           </div>
         </div>
@@ -166,7 +166,7 @@
               augue massa, ultricies non ligula. Suspendisse imperdiet.
             </p>
           </details>
-  
+
           <details class="question__details">
             <summary class="question__summary">How can I request a new browser?</summary>
             <p>
@@ -176,7 +176,7 @@
               augue massa, ultricies non ligula. Suspendisse imperdiet.
             </p>
           </details>
-  
+
           <details class="question__details">
             <summary class="question__summary">Is there a mobile app?</summary>
             <p>
@@ -186,7 +186,7 @@
               augue massa, ultricies non ligula. Suspendisse imperdiet.
             </p>
           </details>
-  
+
           <details class="question__details">
             <summary class="question__summary">What about other Chromium browsers?</summary>
             <p>
@@ -197,8 +197,8 @@
             </p>
           </details>
         </div>
-        <div class="question__btn__box"> 
-            <a class="question__btn" href="#">More Info</a>
+        <div class="question__btn__box">
+          <a class="question__btn" href="#">More Info</a>
         </div>
       </div>
     </section>
@@ -213,13 +213,26 @@
             Stay up-to-date with what
             we’re doing
           </h2>
+          
           <form class="contact__form" action="https://echo.htmlacademy.ru/courses" method="post" autocomplete="off">
             <label>
-              <input class="contact__input" type="email" placeholder="Enter your email address" name="user__email" required>
+              <input class="contact__input" type="email" placeholder="Enter your email address" name="user__email"
+                aria-label="enter your email" required>
+              <span class="contact__invalid">Whoops, make sure it’s an email</span>
             </label>
             <button class="contact__btn" type="submit">Contact Us</button>
           </form>
         </div>
+
+        <!-- <form class="join-form" action="https://echo.htmlacademy.ru/courses" method="post">
+          <label class="join-form__label-email">
+            <input class="join-form__input-email" type="email" minlength="10" name="user_email"
+              placeholder="Enter your email address" aria-label="Enter your email" required>
+            <span class="join-form__tiny">Whoops, make sure it’s an email</span>
+          </label>
+          <button class="join-form__btn" type="submit">Contact Us</button>
+        </form> -->
+
       </div>
     </section>
   </main>
@@ -231,10 +244,7 @@
       <div class="site-footer__content">
         <div class="site-footer__info">
           <a href="./index.html">
-            <img src="./images/site-footer-logo.svg" 
-            width="148" 
-            height="25" 
-            alt="Site footer logo">
+            <img src="./images/site-footer-logo.svg" width="148" height="25" alt="Site footer logo">
           </a>
           <nav>
             <ul class="site-footer__list">
@@ -252,16 +262,22 @@
         </div>
 
         <div class="site-footer__link">
-          <a class="site-footer__item" href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwj2vobaudf4AhXTBKIDHUmDAAgYABAAGgJsZQ&ae=2&ohost=www.google.com&cid=CAESbOD2NUFk_w6QyjO45JE9fqqdLyOTnvZL4hjID-CGjevBxikKLWVKOOlhf5wmLLVF3HmN7DYLjfTkn-kPA96wSAF0rFb_8DHGy8MkQpsmcnBab7n92PxCEiBLFvAnML2yQGWod2UqomJi3zDaIw&sig=AOD64_3rCeeYkv_deHW4m5SOIZrnmGnjGw&q&adurl&ved=2ahUKEwi4s__Zudf4AhWHl4sKHe0hATAQ0Qx6BAgDEAE" target="blank">
+          <a class="site-footer__item"
+            href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwj2vobaudf4AhXTBKIDHUmDAAgYABAAGgJsZQ&ae=2&ohost=www.google.com&cid=CAESbOD2NUFk_w6QyjO45JE9fqqdLyOTnvZL4hjID-CGjevBxikKLWVKOOlhf5wmLLVF3HmN7DYLjfTkn-kPA96wSAF0rFb_8DHGy8MkQpsmcnBab7n92PxCEiBLFvAnML2yQGWod2UqomJi3zDaIw&sig=AOD64_3rCeeYkv_deHW4m5SOIZrnmGnjGw&q&adurl&ved=2ahUKEwi4s__Zudf4AhWHl4sKHe0hATAQ0Qx6BAgDEAE"
+            target="blank">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-              <path id="facebook" fill-rule="evenodd" clip-rule="evenodd" d="M22.675 0H1.325C0.593 0 0 0.593 0 1.325V22.676C0 23.407 0.593 24 1.325 24H12.82V14.706H9.692V11.084H12.82V8.413C12.82 5.313 14.713 3.625 17.479 3.625C18.804 3.625 19.942 3.724 20.274 3.768V7.008L18.356 7.009C16.852 7.009 16.561 7.724 16.561 8.772V11.085H20.148L19.681 14.707H16.561V24H22.677C23.407 24 24 23.407 24 22.675V1.325C24 0.593 23.407 0 22.675 0Z" fill="currentColor"/>
-              </svg>
+              <path id="facebook" fill-rule="evenodd" clip-rule="evenodd"
+                d="M22.675 0H1.325C0.593 0 0 0.593 0 1.325V22.676C0 23.407 0.593 24 1.325 24H12.82V14.706H9.692V11.084H12.82V8.413C12.82 5.313 14.713 3.625 17.479 3.625C18.804 3.625 19.942 3.724 20.274 3.768V7.008L18.356 7.009C16.852 7.009 16.561 7.724 16.561 8.772V11.085H20.148L19.681 14.707H16.561V24H22.677C23.407 24 24 23.407 24 22.675V1.325C24 0.593 23.407 0 22.675 0Z"
+                fill="currentColor" />
+            </svg>
           </a>
 
           <a class="site-footer__item" href="https://twitter.com/?lang=ru" target="blank">
             <svg width="24" height="20" viewBox="0 0 24 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-              <path id="twitter" fill-rule="evenodd" clip-rule="evenodd" d="M24 2.55705C23.117 2.94905 22.168 3.21305 21.172 3.33205C22.189 2.72305 22.97 1.75805 23.337 0.608047C22.386 1.17205 21.332 1.58205 20.21 1.80305C19.313 0.846047 18.032 0.248047 16.616 0.248047C13.437 0.248047 11.101 3.21405 11.819 6.29305C7.728 6.08805 4.1 4.12805 1.671 1.14905C0.381 3.36205 1.002 6.25705 3.194 7.72305C2.388 7.69705 1.628 7.47605 0.965 7.10705C0.911 9.38805 2.546 11.522 4.914 11.997C4.221 12.185 3.462 12.229 2.69 12.081C3.316 14.037 5.134 15.46 7.29 15.5C5.22 17.123 2.612 17.848 0 17.54C2.179 18.937 4.768 19.752 7.548 19.752C16.69 19.752 21.855 12.031 21.543 5.10605C22.505 4.41105 23.34 3.54405 24 2.55705Z" fill="currentColor"/>
-              </svg>
+              <path id="twitter" fill-rule="evenodd" clip-rule="evenodd"
+                d="M24 2.55705C23.117 2.94905 22.168 3.21305 21.172 3.33205C22.189 2.72305 22.97 1.75805 23.337 0.608047C22.386 1.17205 21.332 1.58205 20.21 1.80305C19.313 0.846047 18.032 0.248047 16.616 0.248047C13.437 0.248047 11.101 3.21405 11.819 6.29305C7.728 6.08805 4.1 4.12805 1.671 1.14905C0.381 3.36205 1.002 6.25705 3.194 7.72305C2.388 7.69705 1.628 7.47605 0.965 7.10705C0.911 9.38805 2.546 11.522 4.914 11.997C4.221 12.185 3.462 12.229 2.69 12.081C3.316 14.037 5.134 15.46 7.29 15.5C5.22 17.123 2.612 17.848 0 17.54C2.179 18.937 4.768 19.752 7.548 19.752C16.69 19.752 21.855 12.031 21.543 5.10605C22.505 4.41105 23.34 3.54405 24 2.55705Z"
+                fill="currentColor" />
+            </svg>
           </a>
         </div>
       </div>
