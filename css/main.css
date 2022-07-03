@@ -252,9 +252,7 @@ body{
   margin: 0 auto;
 }
 
-.features__list,
-.slide__list,
-.slider__list
+.features__list
 {
   width: 730px;
   margin: 0 auto;
@@ -264,9 +262,7 @@ body{
   border-bottom: 3px solid #495dcf33;
 }
 
-.features__item,
-.slide__item,
-.slider__item
+.features__item
 {
   margin-top: 72px;
   padding-bottom: 27px;
@@ -274,21 +270,13 @@ body{
   padding-left: 40px;
 }
 
-.slide__item:hover{
-  border-bottom: 3px solid var(--main-red-color);
-}
-
-.slider__item:hover{
-  border-bottom: 3px solid var(--main-red-color);
-}
-
-.features__item:first-child{
+.features__item--active {
   border-bottom: 5px solid var(--main-red-color);
+
 }
 
-.features__item > a,
-.slide__item > a,
-.slider__item > a
+
+.features__item > a
 {
   line-height: 17px;
   text-align: center;
@@ -301,9 +289,7 @@ body{
   color: var(--main-red-color);
 }
 
-.features__info,
-.slide__info,
-.slider__info
+.features__info
 {
   position: relative;
   width: 445px;
@@ -323,36 +309,22 @@ body{
   top: -20px;
 }
 
-.slide__info::before{
-  position: absolute;
-  content: "";
+.features__intelligent::before{
   background-image: url("../images/slide-one.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 1065px;
-  height: 435px;
-  right: 134%;
-  top: -20px;
 }
 
-.slider__info::before{
-  position: absolute;
-  content: "";
+.features__share::before{
   background-image: url("../images/slide-two.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 1065px;
-  height: 435px;
-  right: 134%;
-  top: -20px;
 }
+
+
+
+
 
 .download__heading,
 .features__heading,
 .features__subheading,
-.question__heading,
-.slide__subheading,
-.slider__subheading
+.question__heading
 { 
   margin-bottom: 16px;
   font-weight: 500;
@@ -363,9 +335,7 @@ body{
   color: var(--main-dark-blue);
 }
 
-.features__subheading,
-.slide__subheading,
-.slider__subheading
+.features__subheading
 {
   text-align: left;
 }
@@ -778,3 +748,26 @@ body{
 .site-footer__item:hover{
   color: var(--main-red-color);
 }
+
+
+
+
+
+.bookmark-wrapper{
+  position: relative;
+  width: 800px;
+  margin: 0 auto;
+}
+
+.features__info{
+  display: none;
+}
+
+.bookmark-wrapper--active .features__info{
+  display: block;
+}
+
+
+
+
+
